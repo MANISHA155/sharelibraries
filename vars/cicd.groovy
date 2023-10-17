@@ -9,3 +9,7 @@ def sub(a,b)
   echo "the subtraction of ${a} and ${b} is ${a-b}"
 }
 
+def mul(a,b)
+{
+  echo "the product of ${a} and ${b} is ${a*b}"
+} 
