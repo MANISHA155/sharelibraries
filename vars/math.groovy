@@ -12,9 +12,9 @@ def newDeploy(workspace,ip,context)
     sh "scp /var/lib/jenkins/workspace/${workspace}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat9/webapps/${context}.war"
 }
 
-def executeSelenium(jobname)
+def runSelenium(workspace)
 {
-    sh "java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar"
+    sh "java -jar /var/lib/jenkins/workspace/${workspace}/testing.jar"
 }
 
   
