@@ -12,3 +12,4 @@ def newDeploy(jobname,ipaddress,context)
 {
    sh "scp /var/lib/jenkins/workspace/scriptedpipeline1/webapp/target/webapp.war ubuntu@${ipaddress}:/var/lib/tomcat9/webapps/$(context).war"
 }
+
