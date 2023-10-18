@@ -3,7 +3,7 @@ def newGit(repo)
   git "https://github.com/MANISHA155/${repo}.git"
 }
 
-def newMaven23(repo)
+def newMaven23()
 {
   sh 'mvn package'
 }
