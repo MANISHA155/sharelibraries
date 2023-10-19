@@ -14,7 +14,11 @@ def newDeploy(workspace,ip,context)
 
 def runSelenium(workspace)
 {
-    sh "java -jar /var/lib/jenkins/workspace/${workspace}/testing/testing.jar"
+    sh "java -jar /var/lib/jenkins/workspace/${workspace}/testing.jar"
+}
+def openGit(repo)
+{
+    git "${repo}"
 }
 
   
